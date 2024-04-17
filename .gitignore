@@ -1,0 +1,13 @@
+!.mvn/wrapper/maven-wrapper.jar
+
+.idea
+*.iws
+*.iml
+*.ipr
+
+
+
+### Mac OS ###
+.DS_Store
+# Project exclude paths
+/target/
