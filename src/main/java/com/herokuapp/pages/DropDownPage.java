@@ -4,27 +4,33 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-public class DropDownPage extends BasePage{
+import java.util.List;
+
+public class DropDownPage extends BasePage {
     public DropDownPage(WebDriver driver) {
         super(driver);
     }
 
-    @FindBy(id="dropdown" )
+    @FindBy(id = "dropdown")
     WebElement optionContainer;
-    @FindBy(xpath = "//option[.='Option 1']")
-    WebElement option1;
-    @FindBy(xpath = "//option[.='Option 2']")
-    WebElement option2;
-    public DropDownPage selectOption() {
-        click(optionContainer);
-        optionContainer.sendKeys(Keys.ARROW_DOWN);
-        optionContainer.sendKeys(Keys.ENTER);
+
+    public DropDownPage selectOptionPresent(String option) {
+        Select select = new Select(optionContainer);
+        select.selectByVisibleText(option);
+        List<WebElement> options = select.getOptions();
+        System.out.println(select.getFirstSelectedOption().getText() + " is first");
+        System.out.println("======================================================");
+        for (int i = 0; i < options.size(); i++) {
+            System.out.println(options.get(i).getText());
+        }
+        // Получаем выбранный элемент и сравниваем его текст с ожидаемым значением
+        WebElement selectedOption = select.getFirstSelectedOption();
+        String actualText = selectedOption.getText();
+        Assert.assertEquals(actualText, option, "Selected option is not present in the dropdown");
         return this;
     }
 
-    public void isOptionSelected() {
-        Assert.assertTrue(option1.isSelected(), "Option 2 is not selected");
-    }
 }

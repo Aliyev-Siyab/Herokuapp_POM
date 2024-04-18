@@ -14,7 +14,6 @@ public class DropDownTest extends TestBase{
     @Test
     public void dropDownTest(){
         new DropDownPage(driver)
-                .selectOption()
-                .isOptionSelected();
+                .selectOptionPresent("Option 1");
     }
 }
