@@ -1,6 +1,5 @@
 package com.herokuapp.pages;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,7 +16,7 @@ public class DropDownPage extends BasePage {
     @FindBy(id = "dropdown")
     WebElement optionContainer;
 
-    public DropDownPage selectOptionPresent(String option) {
+    public DropDownPage IsOptionPresent(String option) {
         Select select = new Select(optionContainer);
         select.selectByVisibleText(option);
         List<WebElement> options = select.getOptions();
