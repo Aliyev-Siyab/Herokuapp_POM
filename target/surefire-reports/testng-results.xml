@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-18T21:57:03 CEST" name="Smoky" finished-at="2024-04-18T21:57:14 CEST" duration-ms="11635">
+    <groups>
+    </groups>
+    <test started-at="2024-04-18T21:57:03 CEST" name="Smoky" finished-at="2024-04-18T21:57:14 CEST" duration-ms="11635">
+      <class name="com.herokuapp.tests.AlertsTests">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.herokuapp.tests.AlertsTests@e7edb54]" started-at="2024-04-18T21:57:03 CEST" name="init" finished-at="2024-04-18T21:57:06 CEST" duration-ms="3710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.herokuapp.tests.AlertsTests@e7edb54]" started-at="2024-04-18T21:57:06 CEST" name="precondition" finished-at="2024-04-18T21:57:07 CEST" duration-ms="384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="alertJs()[pri:0, instance:com.herokuapp.tests.AlertsTests@e7edb54]" started-at="2024-04-18T21:57:07 CEST" name="alertJs" finished-at="2024-04-18T21:57:07 CEST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alertJs -->
+        <test-method is-config="true" signature="init()[pri:0, instance:com.herokuapp.tests.AlertsTests@e7edb54]" started-at="2024-04-18T21:57:07 CEST" name="init" finished-at="2024-04-18T21:57:10 CEST" duration-ms="3222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.herokuapp.tests.AlertsTests@e7edb54]" started-at="2024-04-18T21:57:10 CEST" name="precondition" finished-at="2024-04-18T21:57:10 CEST" duration-ms="322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="alertJsConfirm()[pri:0, instance:com.herokuapp.tests.AlertsTests@e7edb54]" started-at="2024-04-18T21:57:10 CEST" name="alertJsConfirm" finished-at="2024-04-18T21:57:11 CEST" duration-ms="135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alertJsConfirm -->
+        <test-method is-config="true" signature="init()[pri:0, instance:com.herokuapp.tests.AlertsTests@e7edb54]" started-at="2024-04-18T21:57:11 CEST" name="init" finished-at="2024-04-18T21:57:14 CEST" duration-ms="3069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.herokuapp.tests.AlertsTests@e7edb54]" started-at="2024-04-18T21:57:14 CEST" name="precondition" finished-at="2024-04-18T21:57:14 CEST" duration-ms="389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="alertJsPrompt()[pri:0, instance:com.herokuapp.tests.AlertsTests@e7edb54]" started-at="2024-04-18T21:57:14 CEST" name="alertJsPrompt" finished-at="2024-04-18T21:57:14 CEST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alertJsPrompt -->
+      </class> <!-- com.herokuapp.tests.AlertsTests -->
+    </test> <!-- Smoky -->
+  </suite> <!-- Smoky -->
+</testng-results>
