@@ -13,7 +13,7 @@ public class FileUploadPage extends BasePage{
 
     @FindBy(id = "file-upload")
     WebElement fileUpload;
-    @FindBy(id = "file-submit") // id="file-submit"
+    @FindBy(id = "file-submit")
     WebElement fileSubmitButton;
     public FileUploadPage uploadFile(String path) {
         fileUpload.sendKeys(path);
@@ -23,7 +23,7 @@ public class FileUploadPage extends BasePage{
 
     @FindBy(id = "content")
     WebElement successTitle;
-    public void verifySuccesTitle(String title) {
+    public void verifySuccessTitle(String title) {
         Assert.assertTrue(shouldHaveText(successTitle,title,10));
     }
 }

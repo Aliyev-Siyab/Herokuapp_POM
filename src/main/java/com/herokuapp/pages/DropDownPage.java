@@ -16,7 +16,7 @@ public class DropDownPage extends BasePage {
     @FindBy(id = "dropdown")
     WebElement optionContainer;
 
-    public DropDownPage IsOptionPresent(String option) {
+    public DropDownPage selectOption(String option) {
         Select select = new Select(optionContainer);
         select.selectByVisibleText(option);
         List<WebElement> options = select.getOptions();
@@ -25,11 +25,13 @@ public class DropDownPage extends BasePage {
         for (int i = 0; i < options.size(); i++) {
             System.out.println(options.get(i).getText());
         }
-        // Получаем выбранный элемент и сравниваем его текст с ожидаемым значением
-        WebElement selectedOption = select.getFirstSelectedOption();
-        String actualText = selectedOption.getText();
-        Assert.assertEquals(actualText, option, "Selected option is not present in the dropdown");
         return this;
     }
 
+    public DropDownPage isOptionSelected(String expectedOption) {
+        Select select = new Select(optionContainer);
+        Assert.assertTrue(select.getFirstSelectedOption().getText().contains(expectedOption),
+                "Selected option does not contain the expected text: " + expectedOption);
+        return this;
+    }
 }

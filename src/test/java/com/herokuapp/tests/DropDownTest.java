@@ -14,6 +14,7 @@ public class DropDownTest extends TestBase{
     @Test
     public void dropDownTest(){
         new DropDownPage(driver)
-                .IsOptionPresent("Option 1");
+                .selectOption("Option 1")
+                .isOptionSelected("Option 1");
     }
 }

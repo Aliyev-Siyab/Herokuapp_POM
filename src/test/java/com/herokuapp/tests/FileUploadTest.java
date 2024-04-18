@@ -17,7 +17,7 @@ public class FileUploadTest extends TestBase{
     public void fileUploadTest(){
         new FileUploadPage(driver)
                 .uploadFile("C:/Tools/Screenshot.png")
-                .verifySuccesTitle("File Uploaded!");
+                .verifySuccessTitle("File Uploaded!");
     }
 
 }

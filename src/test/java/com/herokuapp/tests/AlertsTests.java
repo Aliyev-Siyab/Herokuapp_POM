@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 
 public class AlertsTests extends TestBase{
 
+    // mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testng.xml
+
     @BeforeMethod
     public void precondition(){
         new HomePage(driver).getJavaScriptAlerts();
